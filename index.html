@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+           *
+           { 
+       
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            border: 2px solid blue;
+            height: 380px;
+            width: 380px;
+        }
+        label
+        {
+            display: block;
+            margin-left: 30px;
+        }
+        input
+        {
+            margin-left: 30px;
+            width: 80%;
+            height: 25px;
+        }
+        button
+        {
+         margin-top: 35px;
+         padding: 10px;
+         background-color: blue;
+         color: aliceblue;
+         margin-left: 30px;   
+        } 
+    
+    
+    </style> 
+</head>
+<body>
+    <form>
+        <h1>Grade Calculator</h1>
+        <br>
+        <label>Tamil</label>
+        <input type="text" id="t1">
+
+        <label >English</label>
+        <input type="text" id="t2">
+
+        <label>Maths</label>
+        <input type="text" id="t3">
+
+        <label>science</label>
+        <input type="text" id="t4">
+
+        
+        <label>Sociel Science</label>
+        <input type="text" id="t5">
+
+        <p id="tot"></p>
+
+        <p id="avg"></p>
+         
+        <p id="grade"></p>
+
+        <br>
+         <button type="button" onclick="total()"> Total</button>
+         <button type="button" onclick="average()"> Average</button>
+         <button type="button" onclick="grade()"> Grade</button>
+    </form>
+
+    <script src="index.js"></script>
+    </script>
+</body>
+</html>
